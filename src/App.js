@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./app.css";
+import Header from "./components/header/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h2 className="text-[#C53213] uppercase text-center relative after:absolute after:bottom-[10px] after:left-[50%] content-[*] after:h-1 after:w-10 after:bg-red-600 p-5 after:translate-x-[-50%] after:opacity-0 hover:after:opacity-100">hello</h2>
+      <input placeholder="text" className="border-2 border-solid border-rose-500"/>
+      <Header/>
+      <div className="md:container flex mx-auto">
+        <div className="w-1/2 h-[100px]">
+          <h3 className="font-rob uppercase">hello</h3>
+        </div>
+        <div className="w-1/2 h-[100px] bg-[green]"></div>
+      </div>
+    </>
   );
 }
 
